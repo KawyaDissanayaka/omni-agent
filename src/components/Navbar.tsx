@@ -22,21 +22,24 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full backdrop-blur-xl bg-slate-950/80 border-b border-indigo-500/20 text-slate-100 transition-all duration-300">
+    <header className="sticky top-0 z-50 w-full backdrop-blur-xl bg-slate-950/85 border-b border-indigo-500/20 text-slate-100 transition-all duration-300">
+      {/* Ambient Top Gradient Accent Line */}
+      <div className="h-0.5 w-full bg-gradient-to-r from-cyan-400 via-indigo-500 via-purple-500 to-pink-500 animate-pulse-glow" />
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         
         {/* Brand Logo */}
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-cyan-500 via-indigo-600 to-purple-600 p-0.5 shadow-lg shadow-indigo-500/30 group-hover:scale-105 transition-transform duration-300">
+          <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-cyan-400 via-indigo-500 to-pink-500 p-0.5 shadow-lg shadow-cyan-500/25 group-hover:scale-105 transition-transform duration-300">
             <div className="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center">
-              <Bot className="w-6 h-6 text-cyan-400 group-hover:rotate-12 transition-transform duration-300" />
+              <Bot className="w-6 h-6 text-cyan-400 group-hover:rotate-12 transition-transform duration-300 drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]" />
             </div>
           </div>
           <div className="flex flex-col">
             <span className="text-2xl font-black tracking-tight text-white leading-none">
               Omni<span className="bg-gradient-to-r from-cyan-400 via-indigo-300 to-pink-400 bg-clip-text text-transparent">AI</span>
             </span>
-            <span className="text-[10px] font-extrabold text-cyan-400/90 tracking-wider uppercase mt-1">
+            <span className="text-[10px] font-extrabold text-cyan-400 tracking-widest uppercase mt-1">
               Omni Channel Agent
             </span>
           </div>
